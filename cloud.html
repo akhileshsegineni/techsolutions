@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Solutions Services | TECH Solutions</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 22px;
+        }
+
+        .feature-card:hover {
+            border-color: var(--border-hover);
+            background-color: var(--bg-card-hover);
+        }
+
+        .feature-card h4 {
+            color: var(--accent);
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .price-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+            margin: 30px 0;
+        }
+
+        .price-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 28px 20px;
+            text-align: center;
+        }
+
+        .price-card:hover {
+            border-color: var(--accent);
+        }
+
+        .price-card h4 {
+            color: var(--accent);
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        .price-card p {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .price {
+            font-size: 26px;
+            color: var(--text-main);
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .price-card ul {
+            list-style: none;
+            text-align: left;
+            padding: 12px 0;
+        }
+
+        .price-card ul li {
+            padding: 6px 0;
+            color: var(--text-light);
+            font-size: 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .price-card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .cta-section {
+            background-color: var(--accent);
+            padding: 60px 20px;
+            border-radius: 10px;
+            margin: 40px 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+
+        .cta-section p {
+            color: #e0e0ff;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>☁️ Cloud Solutions Services</h1>
+    <div class="header-login">
+        <a href="cloud-customer.html" class="login-btn">Customer Access</a>
+        <a href="index.html" class="back-btn">← Back Home</a>
+    </div>
+</div>
+
+<section class="section">
+    <h2>Secure, Scalable Cloud Infrastructure</h2>
+    <p>We provide enterprise-grade cloud solutions with AWS, Google Cloud, and Microsoft Azure expertise. Scale your infrastructure with confidence.</p>
+
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+        <h3 style="color: var(--accent); text-align: center; margin: 35px 0 20px;">Our Cloud Solutions Expertise</h3>
+        <div class="features-list">
+            <div class="feature-card">
+                <h4>☁️ Cloud Migration</h4>
+                <p>Seamless migration from on-premise to cloud with zero downtime.</p>
+            </div>
+            <div class="feature-card">
+                <h4>💻 Infrastructure as Code</h4>
+                <p>Automated infrastructure setup and management with Terraform and CloudFormation.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🔐 Security & Compliance</h4>
+                <p>Secure cloud architecture with encryption, firewalls, and compliance (ISO, GDPR, etc).</p>
+            </div>
+            <div class="feature-card">
+                <h4>📦 Containerization</h4>
+                <p>Docker and Kubernetes orchestration for efficient application deployment.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🚀 DevOps & CI/CD</h4>
+                <p>Continuous integration, deployment, and monitoring pipelines.</p>
+            </div>
+            <div class="feature-card">
+                <h4>📊 Database Solutions</h4>
+                <p>Managed databases, data warehouses, and analytics platforms.</p>
+            </div>
+            <div class="feature-card">
+                <h4>⚡ Performance Optimization</h4>
+                <p>Cost optimization and performance tuning for cloud resources.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🛡️ Disaster Recovery</h4>
+                <p>Backup, recovery, and business continuity solutions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: var(--bg-alt);">
+    <h2>Cloud Platforms We Support</h2>
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+        <div class="grid">
+            <div class="grid-item">
+                <h3>AWS</h3>
+                <p>EC2, S3, RDS, Lambda, CloudFormation, VPC, and all major AWS services.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Google Cloud</h3>
+                <p>Compute Engine, Cloud Storage, Firestore, BigQuery, and GCP services.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Microsoft Azure</h3>
+                <p>Virtual Machines, Azure SQL, Functions, and Azure ecosystem services.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Kubernetes</h3>
+                <p>K8s setup, management, and orchestration for container workloads.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Serverless</h3>
+                <p>AWS Lambda, Google Cloud Functions, and Azure Functions.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Monitoring</h3>
+                <p>CloudWatch, Datadog, New Relic, and application performance monitoring.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Packages & Pricing</h2>
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+        <div class="price-cards">
+            <div class="price-card">
+                <h4>Starter</h4>
+                <p>Basic cloud setup</p>
+                <div class="price">₹50K - ₹150K</div>
+                <ul>
+                    <li>✓ VM setup</li>
+                    <li>✓ Basic storage</li>
+                    <li>✓ 24/5 support</li>
+                    <li>✓ Basic monitoring</li>
+                </ul>
+                <a href="login.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <div class="price-card">
+                <h4>Professional</h4>
+                <p>Advanced infrastructure</p>
+                <div class="price">₹150K - ₹500K</div>
+                <ul>
+                    <li>✓ Multi-region</li>
+                    <li>✓ Auto-scaling</li>
+                    <li>✓ CI/CD pipeline</li>
+                    <li>✓ 24/7 support</li>
+                </ul>
+                <a href="login.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <div class="price-card">
+                <h4>Enterprise</h4>
+                <p>Custom solution</p>
+                <div class="price">Custom</div>
+                <ul>
+                    <li>✓ Full migration</li>
+                    <li>✓ Disaster recovery</li>
+                    <li>✓ Premium support</li>
+                    <li>✓ Managed services</li>
+                </ul>
+                <a href="login.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <h2>Ready to Move to the Cloud?</h2>
+    <p>Let's migrate your infrastructure to the cloud with confidence and zero downtime.</p>
+    <a href="login.html" class="btn" style="background-color: #ffffff; color: var(--accent); font-weight: bold;">Start Your Cloud Journey</a>
+</section>
+
+
+</body>
+</html>

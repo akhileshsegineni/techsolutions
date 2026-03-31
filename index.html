@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH Solutions | Digital Services</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /* Homepage extra styles */
+        .service-section {
+            padding: 70px 20px;
+            background-color: var(--bg-alt);
+        }
+
+        .service-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 30px;
+            color: var(--text-main);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            max-width: 1080px;
+            margin: 36px auto;
+        }
+
+        .about-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .about-box:hover {
+            border-color: var(--border-hover);
+        }
+
+        .about-box h3 {
+            color: var(--accent);
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .about-box p {
+            color: var(--text-light);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+            max-width: 1080px;
+            margin: 36px auto;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 22px;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .feature-item:hover {
+            border-color: var(--border-hover);
+        }
+
+        .feature-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .feature-item h4 {
+            color: var(--accent);
+            margin-bottom: 7px;
+            font-size: 17px;
+        }
+
+        .feature-item p {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .stats-section {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 40px;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            margin-top: 6px;
+            font-size: 15px;
+        }
+
+        .cta-section {
+            background-color: var(--accent);
+            padding: 60px 20px;
+            border-radius: 10px;
+            margin: 40px 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: #ffffff;
+            margin-bottom: 14px;
+            font-size: 28px;
+        }
+
+        .cta-section p {
+            font-size: 16px;
+            margin-bottom: 28px;
+            color: #e0e0ff;
+        }
+
+        .cta-section .btn {
+            background-color: #ffffff;
+            color: var(--accent);
+            font-weight: bold;
+            border: none;
+        }
+
+        .cta-section .btn:hover {
+            background-color: #f0f0ff;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 22px;
+            max-width: 1080px;
+            margin: 36px auto;
+        }
+
+        .process-step {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 30px 18px;
+            text-align: center;
+            position: relative;
+            padding-top: 48px;
+            box-shadow: var(--shadow);
+        }
+
+        .process-step::before {
+            content: attr(data-step);
+            position: absolute;
+            top: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 38px;
+            height: 38px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            line-height: 38px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .process-step h4 {
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .process-step p {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="position: relative; overflow: hidden; background: none;">
+        <!-- Video Background -->
+        <video autoplay loop muted playsinline
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+            <source src="building.mp4" type="video/mp4">
+        </video>
+        <!-- Dark Overlay -->
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.55); z-index: 1;">
+        </div>
+
+        <div class="hero-content" style="position: relative; z-index: 2;">
+            <h1>TECH Solutions</h1>
+            <p>Transform your business with cutting-edge digital solutions. We combine innovation, expertise, and
+                creativity to deliver exceptional results.</p>
+            <div class="hero-buttons" id="heroButtons">
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <a href="#services" class="btn" style="background-color: #ffffff; color: var(--accent);">Explore
+                    Services</a>
+            </div>
+            <div style="margin-top: 30px;">
+                <p style="color: #cccccc; font-size: 16px;">REG NO - 24BCE1421</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="service-section" id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card" onclick="window.location.href='web.html'" style="cursor: pointer;">
+                <img src="webdevelop.jpeg" alt="Web Development"
+                    style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 16px;">
+                <h3>Web Development</h3>
+                <p>Create responsive websites that convert visitors into customers with modern design and technology.
+                </p>
+            </div>
+
+            <div class="service-card" onclick="window.location.href='app.html'" style="cursor: pointer;">
+                <img src="appdevelopment.jpeg" alt="App Development"
+                    style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 16px;">
+                <h3>App Development</h3>
+                <p>Build powerful mobile and web applications with intuitive interfaces and robust functionality.</p>
+            </div>
+
+            <div class="service-card" onclick="window.location.href='cloud.html'" style="cursor: pointer;">
+                <img src="cloud.jpeg" alt="Cloud Solutions"
+                    style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 16px;">
+                <h3>Cloud Solutions</h3>
+                <p>Leverage cloud technology for scalable, secure, and reliable infrastructure for your business.</p>
+            </div>
+
+            <div class="service-card" onclick="window.location.href='ui-ux.html'" style="cursor: pointer;">
+                <img src="ui-ux.jpeg" alt="UI/UX Design"
+                    style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 16px;">
+                <h3>UI/UX Design</h3>
+                <p>Design digital products that are beautiful and intuitive, delivering great user experiences.</p>
+            </div>
+
+            <div class="service-card" onclick="window.location.href='marketing.html'" style="cursor: pointer;">
+                <img src="digital.jpeg" alt="Digital Marketing"
+                    style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 16px;">
+                <h3>Digital Marketing</h3>
+                <p>Grow your brand and reach your audience with data-driven marketing strategies.</p>
+            </div>
+
+            <div class="service-card" onclick="window.location.href='security.html'" style="cursor: pointer;">
+                <img src="cyber.jpeg" alt="Cybersecurity"
+                    style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 16px;">
+                <h3>Cybersecurity</h3>
+                <p>Protect your digital assets with our comprehensive security solutions and threat detection.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <h2>About TECH Solutions</h2>
+        <div class="about-grid">
+            <div class="about-box">
+                <h3>Who We Are</h3>
+                <p>A technology company dedicated to delivering innovative digital solutions that help businesses
+                    succeed in the modern world.</p>
+            </div>
+            <div class="about-box">
+                <h3>What We Deliver</h3>
+                <p>End-to-end solutions covering web development, mobile apps, cloud infrastructure, digital marketing,
+                    and more.</p>
+            </div>
+            <div class="about-box">
+                <h3>Why Choose Us</h3>
+                <p>Proven expertise, client-focused approach, cutting-edge technology, and dedicated support with a
+                    strong track record.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="section" style="background-color: var(--bg-alt);">
+        <h2>Why Partner With Us</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <h4>Fast Turnaround</h4>
+                <p>Quick delivery without compromising quality, keeping your projects on schedule.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🎯</div>
+                <h4>Results-Driven</h4>
+                <p>Every solution is designed with your business goals and ROI in mind.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <h4>Secure & Reliable</h4>
+                <p>Strong security and reliability you can trust with your data.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">👥</div>
+                <h4>Expert Team</h4>
+                <p>Skilled professionals with experience across multiple technology domains.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📈</div>
+                <h4>Scalable Solutions</h4>
+                <p>Technologies and systems that grow with your business over time.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🤝</div>
+                <h4>24/7 Support</h4>
+                <p>Dedicated support team available whenever you need assistance.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Let's discuss how TECH Solutions can help you achieve your digital goals.</p>
+        <a href="login.html" class="btn">Get Started Today</a>
+    </section>
+
+</body>
+
+</html>

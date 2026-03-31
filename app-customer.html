@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Development - Customer Portal | TECH Solutions</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+            margin: 35px 0;
+        }
+
+        .benefit-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .benefit-card:hover {
+            border-color: var(--border-hover);
+            background-color: var(--bg-card-hover);
+        }
+
+        .benefit-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        .benefit-card h4 {
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .benefit-card p {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>App Development - Customer Portal</h1>
+    <div class="header-login">
+        <a href="app.html" class="back-btn">← Back</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<section class="section">
+    <h2>Welcome to Our App Development Services</h2>
+    <p>Transform your app ideas into reality with our expert mobile and cross-platform development team.</p>
+
+    <div style="max-width: 1000px; margin: 40px auto; padding: 0 20px;">
+        <h3 style="color: var(--accent); text-align: center; margin-bottom: 25px;">Why Choose Our App Development?</h3>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">📱</div>
+                <h4>Multi-Platform</h4>
+                <p>iOS, Android, and web apps from a single codebase solution.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">⚡</div>
+                <h4>High Performance</h4>
+                <p>Fast, smooth, and responsive apps that users keep coming back to.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">🎨</div>
+                <h4>Good Design</h4>
+                <p>Clean UI/UX that follows platform guidelines and user expectations.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">🔒</div>
+                <h4>Secure & Reliable</h4>
+                <p>Strong security and data protection for your app users.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">☁️</div>
+                <h4>Cloud Integration</h4>
+                <p>Real-time sync, cloud storage, and seamless backend services.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">📈</div>
+                <h4>Growth Ready</h4>
+                <p>Scalable architecture that grows with your user base and features.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" style="background-color: #141414;">
+    <h2>Our App Development Services</h2>
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+        <div class="grid">
+            <div class="grid-item">
+                <h3>🍎 iOS Apps</h3>
+                <p>Native Swift apps optimized for iPhone and iPad with clean interfaces.</p>
+            </div>
+
+            <div class="grid-item">
+                <h3>🤖 Android Apps</h3>
+                <p>Native Kotlin apps that work well on Android devices and tablets.</p>
+            </div>
+
+            <div class="grid-item">
+                <h3>🔄 Cross-Platform</h3>
+                <p>Flutter & React Native apps for maximum reach with minimal development time.</p>
+            </div>
+
+            <div class="grid-item">
+                <h3>💼 Enterprise Apps</h3>
+                <p>Secure, scalable apps for organizational use and business processes.</p>
+            </div>
+
+            <div class="grid-item">
+                <h3>🛒 E-Commerce Apps</h3>
+                <p>Full-featured shopping apps with payment, inventory, and order management.</p>
+            </div>
+
+            <div class="grid-item">
+                <h3>🔧 App Maintenance</h3>
+                <p>Updates, bug fixes, performance optimization, and continuous improvement.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+    <h2>Ready to Build Your App?</h2>
+    <p>Let's discuss your app vision and make it a success.</p>
+    <div style="margin-top: 25px;">
+        <button onclick="addToCart('App Development')" class="btn btn-primary" style="margin: 8px;">Add to Cart</button>
+        <a href="app.html" class="btn btn-secondary" style="margin: 8px;">View More Services</a>
+    </div>
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

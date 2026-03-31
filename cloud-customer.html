@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Solutions - Customer Portal | TECH Solutions</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin: 28px 0;
+        }
+
+        .benefit-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 22px;
+            text-align: center;
+        }
+
+        .benefit-card:hover {
+            border-color: var(--border-hover);
+            background-color: var(--bg-card-hover);
+        }
+
+        .benefit-card .icon {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .benefit-card h4 {
+            color: var(--accent);
+            margin-bottom: 7px;
+        }
+
+        .benefit-card p {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Cloud Solutions - Customer Portal</h1>
+    <div class="header-login">
+        <a href="cloud.html" class="back-btn">← Back</a>
+    </div>
+</div>
+
+<section class="section">
+    <h2>Cloud Solutions for Your Business</h2>
+    <p>Leverage cloud technology to scale your business efficiently and securely.</p>
+
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+        <h3 style="color: var(--accent); text-align: center; margin: 30px 0 20px;">Benefits of Our Cloud Solutions</h3>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="icon">💰</div>
+                <h4>Cost Savings</h4>
+                <p>Pay only for what you use with our optimized cloud solutions.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">🚀</div>
+                <h4>Scalability</h4>
+                <p>Scale up or down instantly based on your business demands.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">🔒</div>
+                <h4>Security</h4>
+                <p>Strong security with compliance and encryption across the board.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">🌍</div>
+                <h4>Global Reach</h4>
+                <p>Deploy globally with multiple regions and data centers.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">⚡</div>
+                <h4>Performance</h4>
+                <p>Fast performance with optimized, cloud-native infrastructure.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon">📈</div>
+                <h4>Reliability</h4>
+                <p>99.99% uptime SLA and automatic disaster recovery built in.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background-color: var(--bg-alt);">
+    <h2>Our Cloud Services</h2>
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+        <div class="grid">
+            <div class="grid-item">
+                <h3>🔄 Cloud Migration</h3>
+                <p>Move your applications and data to the cloud seamlessly.</p>
+            </div>
+            <div class="grid-item">
+                <h3>🏗️ Infrastructure Setup</h3>
+                <p>Design and deploy custom cloud infrastructure for your needs.</p>
+            </div>
+            <div class="grid-item">
+                <h3>🐳 Containerization</h3>
+                <p>Docker and Kubernetes for modern application deployment.</p>
+            </div>
+            <div class="grid-item">
+                <h3>📊 Database Services</h3>
+                <p>Managed databases and data analytics platforms.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Ready to Transform Your Infrastructure?</h2>
+    <p>Let's move your business to the cloud with confidence.</p>
+    <div style="margin-top: 22px;">
+        <button onclick="addToCart('Cloud Solutions')" class="btn btn-primary" style="margin: 8px;">Add to Cart</button>
+        <a href="cloud.html" class="btn btn-secondary" style="margin: 8px;">View More Services</a>
+    </div>
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

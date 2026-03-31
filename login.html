@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TECH Solutions</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .auth-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            background-color: var(--bg-alt);
+        }
+
+        .auth-card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 40px 35px;
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+
+        .auth-card h2 {
+            color: var(--accent);
+            margin-bottom: 25px;
+            font-size: 26px;
+        }
+
+        .auth-input-group {
+            margin-bottom: 18px;
+            text-align: left;
+        }
+
+        .auth-input-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .auth-input-group input {
+            width: 100%;
+            max-width: 100%;
+            padding: 11px 13px;
+            border-radius: 6px;
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            font-size: 14px;
+        }
+
+        .auth-input-group input:focus {
+            border-color: var(--accent);
+            outline: none;
+        }
+
+        .error-msg {
+            color: #dc2626;
+            margin-bottom: 14px;
+            display: none;
+            font-size: 14px;
+            background-color: #fef2f2;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #fecaca;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>TECH Solutions</h1>
+        <div class="header-login">
+            <a href="index.html" class="back-btn">Back Home</a>
+        </div>
+    </div>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>Member Login</h2>
+            <div class="error-msg" id="errorMsg">Invalid username or password.</div>
+
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="auth-input-group">
+                    <label>Username</label>
+                    <input type="text" id="username" placeholder="Enter username" required>
+                </div>
+
+                <div class="auth-input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 12px;">Login</button>
+            </form>
+
+
+
+            <p style="color: var(--text-light); margin-bottom: 12px; font-size: 14px;">Don't have an account?</p>
+            <a href="signup.html" class="btn btn-secondary" style="width: 100%;">Sign Up</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
