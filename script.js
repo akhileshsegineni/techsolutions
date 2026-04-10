@@ -10,9 +10,14 @@ function updateGreeting() {
     if (greetingElement) {
         var currentUser = JSON.parse(localStorage.getItem('currentUser'));
         var currentEmployee = JSON.parse(localStorage.getItem('currentEmployee'));
+        var isEmployeeView = window.location.pathname.includes('employee-dashboard.html');
+        
         var name = 'Member';
-        if (currentEmployee) name = 'Team ' + currentEmployee.name;
-        else if (currentUser) name = currentUser.fullName.split(' ')[0];
+        if (isEmployeeView && currentEmployee) {
+            name = 'Team ' + currentEmployee.name;
+        } else if (currentUser) {
+            name = currentUser.fullName.split(' ')[0];
+        }
         greetingElement.innerHTML = greeting + ', ' + name + '!';
     }
 }
@@ -21,6 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
     updateGreeting();
     loadOrders();
     updateCartCount();
+    
+    // Auto-update if data changes in another tab (Real-time sync)
+    window.addEventListener('storage', function(e) {
+        if (e.key && e.key.startsWith('orders_')) {
+            loadOrders();       // For customer dashboard
+            loadEmployeeOrders(); // For employee dashboard
+        }
+    });
 });
 function openModal(id) {
     var el = document.getElementById(id);
