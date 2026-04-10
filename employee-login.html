@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | TECH Solutions</title>
+    <title>Employee Login | TECH Solutions</title>
     <link rel="stylesheet" href="common.css">
     <style>
         .auth-container {
@@ -79,37 +79,31 @@
 <body>
 
     <div class="header">
-        <h1>TECH Solutions</h1>
+        <h1>TECH Solutions (Staff Portal)</h1>
         <div class="header-login">
-            <a href="index.html" class="back-btn">Back Home</a>
+            <a href="login.html" class="back-btn">Customer Login</a>
         </div>
     </div>
 
     <div class="auth-container">
         <div class="auth-card">
-            <h2>Member Login</h2>
+            <h2>Employee Login</h2>
             <div class="error-msg" id="errorMsg">Invalid username or password.</div>
 
-            <form id="loginForm" onsubmit="handleLogin(event)">
+            <form id="employeeLoginForm" onsubmit="handleEmployeeLogin(event)">
                 <div class="auth-input-group">
-                    <label>Username</label>
-                    <input type="text" id="username" placeholder="Enter username" required>
+                    <label>Employee Email / Username</label>
+                    <input type="text" id="employeeUsername" placeholder="e.g. emp1@tech.com" required>
                 </div>
 
                 <div class="auth-input-group">
                     <label>Password</label>
-                    <input type="password" id="password" placeholder="Enter password" required>
+                    <input type="password" id="employeePassword" placeholder="Enter password" required>
                 </div>
 
-                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 12px;">Login</button>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 12px;">Login as Employee</button>
             </form>
 
-
-
-            <p style="color: var(--text-light); margin-bottom: 12px; font-size: 14px;">Don't have an account?</p>
-            <a href="signup.html" class="btn btn-secondary" style="width: 100%; margin-bottom: 12px;">Sign Up</a>
-            
-            <a href="employee-login.html" class="btn btn-outline" style="width: 100%;">Employee Login</a>
         </div>
     </div>
 

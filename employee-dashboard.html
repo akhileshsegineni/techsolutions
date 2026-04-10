@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard | TECH Solutions</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .dashboard-container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            color: var(--accent);
+            margin: 35px 0 18px 0;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .order-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 22px;
+            margin-bottom: 16px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .order-card:hover {
+            border-color: var(--border-hover);
+        }
+
+        .order-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .status-active {
+            background-color: #d1fae5;
+            color: #065f46;
+            border: 1px solid #6ee7b7;
+        }
+
+        .status-completed {
+            background-color: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #93c5fd;
+        }
+
+        .timeline {
+            margin: 25px 0;
+            padding-left: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 15px;
+            padding-left: 20px;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .chat-msg {
+            padding: 12px 14px;
+            border-radius: 8px;
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+        
+        .action-box {
+            background-color: var(--bg-alt);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border: 1px solid var(--border-color);
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 id="greeting">Welcome, Team!</h1>
+        <div class="header-login" style="display: flex; gap: 12px; align-items: center;">
+            <span style="font-weight: bold; color: var(--accent); margin-right: 15px;">Staff Portal</span>
+            <button onclick="handleEmployeeLogout()" class="btn btn-secondary">Logout</button>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+
+        <h2 class="section-title">All Customer Assigned Orders</h2>
+        <div id="employeeOrdersList">
+            <p style="color: var(--text-light); text-align: center; padding: 20px;">Loading customer orders...</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Auto-load orders on emp dash
+        document.addEventListener('DOMContentLoaded', function () {
+            if(typeof loadEmployeeOrders === 'function') {
+                loadEmployeeOrders();
+            }
+        });
+    </script>
+</body>
+
+</html>
